@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Overall Layout */
+
+.container {
+  display: grid;
+  grid-template-columns: auto 500px auto;
+  grid-template-areas:
+    '. navbar .'
+    '. box .';
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+	grid-area: navbar;	
+	margin: 0;
+}
+
+.nav-bar li {
+	float: left;
+	background-color: #ddd;
+}
+
+.nav-bar li span {
+	display: block;
+	padding: 20px;
+}
+
+.nav-bar li:hover:not(.active) {
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.nav-bar .active {
+	background-color: green;
+}
+
+/* Display Box */
+
+.box {
+	grid-area: box;
+  	background-color: #eee;
+}
+
+.box ul {
+	background-color: #eee;
+	text-align: center;
+}
+
+/* Different Cards */
+
+.view-all-contacts {
+	display: inline-block;
+}
+
+.search-contacts {
+	display: none;
+}
+
+.add-a-contact {
+	display: none;
+	padding: 10px;
+}
+
+h3 {
+	text-align: center;
+}
+
+input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25%;
+	padding-right: 25%;
+	margin-top: 5px;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+}
+
+.submit {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 25%;
+	padding-right: 25%;
+	margin-top: 5px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
